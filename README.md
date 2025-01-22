@@ -61,9 +61,3 @@ NN VBZ IN DT NN .
 
 ## Accuracy
 The Viterbi algorithm achieved an accuracy of **~XX%** on the provided test data.
-
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
-
-## License
-This project is licensed under the MIT License.

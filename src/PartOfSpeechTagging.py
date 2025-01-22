@@ -25,6 +25,7 @@ with open("WSJ_24.pos", 'r') as f:
     y = f.readlines()
 y[:5]
 
+# test data after preprocessing
 _, preprocessed = preprocess(vocab, "test.words")
 print(len(preprocessed))
 

@@ -195,7 +195,7 @@ print(f"best_probs[0,4]: {best_probs_f[0,4]:.4f}")
 
 def viterbi_backward(best_probs, best_paths, corpus, states):
 
-    # viterbi_backward used for prediction
+    # predict the most likely sequence of pos tags for a specific sequence of words
 
     res = [None] * best_paths.shape[1]
     res[-1] = states[best_probs[:,-1].argmax()]

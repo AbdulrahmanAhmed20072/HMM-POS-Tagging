@@ -95,31 +95,6 @@ def predict_pos(preprocessed, y, emission_count, vocab,states):
 
 predict_pos(preprocessed,y,emission_count,vocab, states)
 
-def predict_pos2(preprocessed, y, emission_count, vocab,states):
-
-    words_dict, res = defaultdict(int), []
-
-    for word, y_tup in zip(preprocessed,y):
-        for tag in states:
-
-            if emission_count.get((tag, word)):
-                if word not in words_dict:
-
-                    words_dict[word] = (tag,emission_count[(tag, word)])
-
-                else:
-                    if words_dict[word][1] < emission_count[(tag, word)]:
-                        words_dict[word] = (tag, emission_count[(tag, word)])
-
-        word,tag = get_word_tag(y_tup, words_dict)
-
-        if word in words_dict:
-            res.append(tag == words_dict[word][0])
-
-    return sum(res) / len(y)
-
-predict_pos2(preprocessed,y,emission_count,vocab, states)
-
 def create_transition_matrix(alpha, states, transition_count):
 
     # transition_matrix contains the proba between pos and pos

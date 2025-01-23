@@ -11,7 +11,7 @@ This repository contains an implementation of Part-of-Speech (POS) tagging using
 
 ## Files
 
-1. **`PartOfSpeechTagging.py`**: Python script containing the project implementation.
+1. **`PartOfSpeechTagging.ipynb`**: Python script containing the project implementation.
 2. **Training Data**: `WSJ_02-21.pos` - Corpus for training.
 3. **Test Data**: `WSJ_24.pos` - Corpus for testing.
 4. **Vocabulary**: `hmm_vocab.txt` - List of valid words for tagging.
@@ -37,7 +37,7 @@ This repository contains an implementation of Part-of-Speech (POS) tagging using
 
 Run the script as follows:
 ```bash
-python PartOfSpeechTagging.py
+python PartOfSpeechTagging.ipynb
 ```
 
 ## Outputs
